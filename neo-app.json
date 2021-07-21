@@ -21,6 +21,14 @@
       "description": "SAPUI5 Resources"
     },
     {
+      "path": "/destination/ZPMS_PDF_SRV",
+      "target": {
+        "type": "destination",
+        "name": "ZPMS_PDF_SRV"
+      },
+      "description": "ZPMS_PDF_SRV Service"
+    },
+    {
       "path": "/test-resources",
       "target": {
         "type": "service",

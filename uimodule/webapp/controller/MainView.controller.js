@@ -6,12 +6,12 @@ sap.ui.define([
 
 	return Controller.extend("com.infocus.PMSReport.controller.MainView", {
 		onInit: function() {
-			this._sValidPath = sap.ui.require.toUrl("sap/m/sample/PDFViewerEmbedded/sample.pdf");
-			this._sInvalidPath = sap.ui.require.toUrl("sap/m/sample/PDFViewerEmbedded/sample_nonexisting.pdf");
+			var sServiceURL = this.getView().getModel().sServiceUrl;
+			var sSource = sServiceURL + "/pdfSet('')/$value";
 			this._oModel = new JSONModel({
-				Source: this._sValidPath,
-				Title: "My Custom Title",
-				Height: "600px"
+				Source: sSource,
+				Title: "PMS Report",
+				Height: "768px"
 			});
 			this.getView().setModel(this._oModel);
 		}
