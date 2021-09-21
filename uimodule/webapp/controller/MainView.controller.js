@@ -11,7 +11,7 @@ sap.ui.define([
 			this._oModel = new JSONModel({
 				Source: sSource,
 				Title: "PMS Report",
-				Height: "768px"
+				Height: "700px"
 			});
 			this.getView().setModel(this._oModel);
 		}
