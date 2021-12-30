@@ -13,7 +13,7 @@
     "loadCustomRequests": false,
     "mockRequestsFilePath": ""
   },
-  "deploy": {
+ "deploy": {
     "destination": "GDG",
     "name": "ZPMS_REPORT"
   }
